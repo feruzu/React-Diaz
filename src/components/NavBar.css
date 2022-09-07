@@ -1,0 +1,45 @@
+.barra {
+    padding: 2rem 0rem 1rem;
+    color: #1c1c1c ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    border-bottom: 0.1rem solid #1c1c1c2f;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+nav a {
+    cursor: pointer;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+h1 {
+    font-family: 'Aboreto', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0.2rem;
+    letter-spacing: 0.5rem; 
+}
+
+
+nav a:hover {
+    border-bottom: 0.1rem solid #1c1c1ca8;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 19px 19px -17px;
+    color: #1c1c1c;  
+}
+
+.bi-bag{
+    font-size: 1.6rem;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+
+p{
+    margin: 0;
+}
