@@ -1,6 +1,11 @@
-
 import './App.css';
-import Barra from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer  from './components/ItemListContainer/ItemListContainer';
+
+
+
+
+
 
 
 function App() {
@@ -9,9 +14,10 @@ function App() {
     <div className="App">
       
       <header className="App-header">
-      <Barra />
+      <NavBar />
       </header>
-    
+      
+      <ItemListContainer greeting="Bienvenidos a la Web" />
     </div>
   );
 }

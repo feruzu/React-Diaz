@@ -1,5 +1,5 @@
 .barra {
-    padding: 2rem 0rem 1rem;
+    padding-top: 1rem;
     color: #1c1c1c ;
     display: flex;
     justify-content: space-between;
@@ -42,4 +42,11 @@ nav a:hover {
 
 p{
     margin: 0;
+}
+
+
+.cantidad{
+    position: absolute;
+    font-size: 1.3rem;
+    margin-top: 1rem;
 }

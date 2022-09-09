@@ -4,12 +4,10 @@
   
 }
 
-
 .App-header {
-  min-height: 100vh;
   color: white;
   width: min(90%, 140rem);
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 html {
@@ -26,5 +24,6 @@ body {
   margin: 0;
   font-size: 1.6rem;
   line-height: 2;
+  background-color: #ecebe4;
 }
 
