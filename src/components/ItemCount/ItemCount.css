@@ -1,0 +1,49 @@
+button {
+    cursor: pointer;
+    padding: 1rem 1.8rem;
+    border: none;   
+    font-family: 'Cinzel', serif;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+button:active {
+    opacity: 100%;
+}
+
+.count button {
+    background-color: #1c1c1c;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+.add {
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;  
+    text-transform: uppercase;     
+    
+}
+
+.addCart {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem;  
+    font-weight: bold; 
+    
+}
+
+.addCart span {
+    padding: 1rem 1.8rem;  
+    font-size: 1.6rem;
+    font-family: 'Cinzel', serif;
+}
+
+.count {
+    background-color: white;
+}
