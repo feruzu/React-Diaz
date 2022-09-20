@@ -4,7 +4,6 @@ import "./ItemCount.css";
 
 function ItemCount({stock, initial}){
     const [count, setCount] = useState(initial);
-    console.log(`Stock: ${stock}`);
 
     function handleAdd() {
         if(count < stock){

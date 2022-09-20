@@ -1,13 +1,13 @@
 .App {
   text-align: center;
   background-color: #ecebe4;
+  width: min(90%, 140rem);
+  margin: 0 auto;
   
 }
 
 .App-header {
   color: white;
-  width: min(90%, 140rem);
-  margin: 0 auto;
 }
 
 html {
@@ -26,4 +26,3 @@ body {
   line-height: 2;
   background-color: #ecebe4;
 }
-

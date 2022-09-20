@@ -1,0 +1,46 @@
+.container {
+   display: flex; 
+   gap: 3rem;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.item {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+
+.item img{
+    width: 230px; 
+    height: 300px;
+}
+
+button {
+    cursor: pointer;
+    padding: 1rem 1.8rem;
+    border: none;   
+    font-family: 'Cinzel', serif;
+    background-color: #1c1c1c;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover {
+    opacity: 60%;
+}
+
+
+h4, h3 {
+    margin: 0;
+}
+
+h4 {
+    color: rgba(0, 0, 0, 0.445);
+}
+
+.item:hover {
+    transform:scale(1.1);
+    
+}
