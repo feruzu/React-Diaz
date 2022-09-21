@@ -13,9 +13,7 @@ function App() {
     
     <div className="App">
       
-      <header className="App-header">
       <NavBar />
-      </header>
       
       <ItemListContainer greeting="Bienvenidos a la Web" />
     </div>

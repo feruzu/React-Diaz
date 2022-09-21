@@ -3,12 +3,8 @@
   background-color: #ecebe4;
   width: min(90%, 140rem);
   margin: 0 auto;
-  
 }
 
-.App-header {
-  color: white;
-}
 
 html {
   box-sizing: border-box;
