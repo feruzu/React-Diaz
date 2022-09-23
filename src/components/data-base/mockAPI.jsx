@@ -13,7 +13,7 @@ const data = [
         title: 'Ácido glicólico',
         price: 900,
         stock:  5,
-        img: 'img/2.jpg',
+        img: '/img/2.jpg',
         category: 'Exfoliante',
         detail: 'Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.'
     },
@@ -22,7 +22,7 @@ const data = [
         title: 'Ácido Ascórbico Etilado',
         price: 900,
         stock:  5,
-        img: 'img/3.jpg',
+        img: '/img/3.jpg',
         category: 'Vitamina',
         detail: 'Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.'
     },
@@ -31,7 +31,7 @@ const data = [
         title: 'Ácido Hialurónico',
         price: 1250,
         stock:  5,
-        img: 'img/4.jpg',
+        img: '/img/4.jpg',
         category: 'Hidratante',
         detail: 'Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.'
     },
@@ -40,7 +40,7 @@ const data = [
         title: 'Limpiador de Escualeno',
         price: 1800,
         stock:  5,
-        img: 'img/5.jpg',
+        img: '/img/5.jpg',
         category: 'Hidratante',
         detail: 'Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.'
     } 
@@ -53,5 +53,16 @@ export function getData(){
         }, 2000)
     })  
 }
+
+export function getOneData(){
+    return new Promise( (resolve, reject ) => {
+        setTimeout( () => {
+            resolve(data[3])
+        }, 2000)
+    })  
+}
+
+
+
 
 export default data;

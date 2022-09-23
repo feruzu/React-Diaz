@@ -20,7 +20,6 @@ function ItemListContainer(props){
     return(
         <div>
         {props.greeting}
-        { <ItemCount initial={1} stock={15}/> }
         <ItemList data={data}/>
         </div>   
     );
