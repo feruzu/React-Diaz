@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #ecebe4;
   width: min(90%, 140rem);
   margin: 0 auto;
 }
@@ -9,10 +8,13 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  background-color: #ecebe4;
   
 }
 
-*,*:before,:after {
+*,
+*:before,
+:after {
   box-sizing: inherit;
 }
 
@@ -21,4 +23,17 @@ body {
   font-size: 1.6rem;
   line-height: 2;
   background-color: #ecebe4;
+}
+#root {
+  background-color: #ecebe4;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin-top: 6rem;
+  font-family: 'Cinzel', serif;
+  text-align: left;
+  border-bottom:  1.5px solid rgba(0, 0, 0, 0.425);
+  width: 28rem;
+  letter-spacing: 1.2rem;
 }

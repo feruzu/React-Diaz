@@ -1,7 +1,7 @@
 button {
     cursor: pointer;
     padding: 1rem 1.8rem;
-    border: none;   
+    border: none;
     font-family: 'Cinzel', serif;
 }
 
@@ -18,26 +18,17 @@ button:active {
     font-size: 1.6rem;
     font-weight: bold;
     color: white;
-    padding: 1.5rem 1.8rem;
+    padding: 1.3rem 1.8rem;
 }
 
-.count button:nth-child(1){
-    border-bottom-left-radius: 0.5rem;  
-    border-top-left-radius: 0.5rem;
-}
-
-.count button:nth-child(3){
-    border-bottom-right-radius: 0.5rem;  
-    border-top-right-radius: 0.5rem;
-}
 
 .add {
     background-color: #1c1c1c;
     color: white;
-    margin: 0;  
-    text-transform: uppercase;     
-    border-radius: 0.5rem;  
+    margin: 0;
+    text-transform: uppercase;
     padding: 1.5rem 1.8rem;
+    font-size: 1.4rem;
 }
 
 .addCart {
@@ -49,7 +40,7 @@ button:active {
 }
 
 .addCart span {
-    padding: 0rem 1.8rem;  
+    padding: 0rem 1.8rem;
     font-size: 1.6rem;
     font-family: 'Cinzel', serif;
     margin: 0;
@@ -57,32 +48,33 @@ button:active {
 
 .count span {
     background-color: #1c1c1c;
-    padding: 1.5rem 1.8rem;
-    color: white;  
+    padding: 1.4rem 1.8rem;
+    color: white;
 }
 
-.disponible  {
+.disponible {
     background-color: rgba(157, 161, 145, 0.295);
     width: 240px;
-    border-radius: 0.5rem;  
     padding: 1.3rem 1.8rem;
 }
 
 
-@media (max-width: 1000px) { 
-     
-.addCart {
-    width: 100%;
-    gap: 2rem;
-}
+@media (max-width: 1000px) {
 
-.disponible {
-    width: 73%;
-    text-align: center;  
-}
-    .count button, .count span {
+    .addCart {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .disponible {
+        width: 73%;
+        text-align: center;
+    }
+
+    .count button,
+    .count span {
         width: 30%;
     }
 
-   
+
 }

@@ -1,80 +1,44 @@
-.container {
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Cinzel', serif;
- }
-
- .item {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    gap: 5rem;
-    display:flex;
-    justify-content: center;
-    align-items: center;
- }
-
-.item img{
-    max-width: 40%;
-    border: 3px solid rgba(0, 0, 0, 0.411); 
+.item-detail-producto {
+   justify-content: center;
+   flex-wrap: wrap;
+   font-family: 'Cinzel', serif;
+   text-align: left;
 }
 
-.item h1 {
-    font-size: 3rem;
-    border-bottom: 1px solid #83978881;
-    font-family: 'Cinzel', serif;
+.item-detail-contenedor {
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+   gap: 5rem;
+   display:flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.item h3 {
-    font-size: 2rem;
-    border: 3px solid #83978881;
-    background-color: #83978881;
-    width: 40%;
-    padding: 0.1rem;
-    text-align: center; 
-    color: white;
-} 
-
-.item h4 {
-    font-size: 1.6rem;
-    margin: 0;
+.item-detail-contenedor img{
+   max-width: 38%;
 }
 
-.item-detail {
-    text-align: left;
-}
-
-.item-detail h2:nth-child(3){
-   font-size: 2rem;
-   border-bottom: 0;
+.item-detail-contenedor h1{
+   border-bottom: 2px solid black;
    margin: 0;
+   font-size: 4rem;
 }
 
-@media (max-width: 1000px) { 
 
-     .item{
-        display: block; 
-     }
-
-     .item img {
-        max-width: 100%;
-     }
-
-     .item h1 {
-        text-align: center;
-     }
-
-     .item h3 {
-        margin-top: 5rem;
-        width: 100%;
-     }  
-     
+.item-detail-contenedor h3{
+   margin: 2rem 0;
 }
 
-@media (max-width: 720px) { 
-     .item {
-        max-width: 90%;
-     }
+@media (max-width: 900px) { 
+   .item-detail-contenedor {
+      justify-content: center;
+      flex-wrap: wrap;
+      font-family: 'Cinzel', serif;
+      text-align: left;
+      display: flex;
+   }
 
-
+   .item-detail-contenedor img{
+      max-width: 100%;
+   }
 }
