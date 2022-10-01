@@ -29,6 +29,25 @@
    margin: 2rem 0;
 }
 
+.finalizarCompra{
+   background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 1.5rem 1.8rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.finalizarCompra:hover {
+   color: white;
+   opacity: 70%;
+}
+
+.finalizarCompra:active {
+   opacity: 100%;
+}
+
 @media (max-width: 900px) { 
    .item-detail-contenedor {
       justify-content: center;

@@ -1,8 +1,17 @@
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ItemDetail({ item }) {
   let { price, title, img, detail } = item;
+
+  let [cartVacio, setCartVacio] = useState(true);
+
+  function onAdd(count) {
+    alert(`${count} unidades añadidas al carrito`);
+    setCartVacio(false);
+  }
 
   return (
     <div className="item-detail-contenedor">
@@ -12,15 +21,16 @@ function ItemDetail({ item }) {
         <h3>$ {price}</h3>
         <h2>Detalles: </h2>
         <h4>{detail}</h4>
-        {<ItemCount initial={1} stock={15} onAdd={onAdd} />}
-        
+        {cartVacio ? (
+          <ItemCount initial={1} stock={15} onAdd={onAdd} />
+        ) : (
+          <Link className="finalizarCompra" to="/cart">
+            Finalizar compra
+          </Link>
+        )}
       </div>
     </div>
   );
-}
-
-function onAdd() {
-  alert(`Añadido con éxito`);
 }
 
 export default ItemDetail;
