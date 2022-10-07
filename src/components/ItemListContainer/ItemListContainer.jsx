@@ -4,29 +4,49 @@ import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { getItemsByCategory } from "../data-base/mockAPI";
 import Carrusel from "../Carousel/Carousel";
+import { DotPulse } from '@uiball/loaders'
+
+
 
 function ItemListContainer(props) {
-  let [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
   const { categoria } = useParams();
 
+  const [ isLoading, setIsLoading] = useState(true)
+
+
   useEffect(() => {
+    setData([]);
+    setIsLoading(true);
     if (categoria === undefined) {
-      getData().then((respuestaDatos) => setData(respuestaDatos));
+      getData().then((respuestaDatos) => setData(respuestaDatos))
+      .finally( () => setIsLoading(false))
     } else {
-      getItemsByCategory(categoria).then((respuestaDatos) =>
-        setData(respuestaDatos)
-      );
+      getItemsByCategory(categoria)
+      .then((respuestaDatos) => setData(respuestaDatos))
+      .finally( () => setIsLoading(false))
     }
   }, [categoria]);
 
   return (
-    <div>
-      <Carrusel />
-      {/* {props.greeting} */}
-      <h1 className="titulo">Productos</h1>
-      <ItemList data={data} />
-    </div>
+    <>
+      <Carrusel/>
+      {isLoading ? (
+        <div className="loading-inicio">
+          <DotPulse size={55} speed={1.3} color="black" />
+        </div>
+      ) : (
+        <div>
+          
+          {/* {props.greeting} */}
+          <h1 className="titulo">Productos</h1>
+          <h2 className="categoria">{categoria}</h2>
+          <ItemList data={data} />
+        </div>
+      )
+    }
+    </>
   );
 }
 

@@ -45,17 +45,17 @@ function NavBar() {
             </Link>
             <ul className="dropdown-menu">
               <li>
-                <Link to="/categoria/exfoliante" className="dropdown-item">
-                  Exfoliante
+                <Link to="/categoria/exfoliantes" className="dropdown-item">
+                  Exfoliantes
                 </Link>
               </li>
               <li>
-                <Link to="/categoria/hidratante" className="dropdown-item">
+                <Link to="/categoria/hidratantes" className="dropdown-item">
                   Hidratantes
                 </Link>
               </li>
               <li>
-                <Link to="/categoria/vitamina" className="dropdown-item">
+                <Link to="/categoria/vitaminas" className="dropdown-item">
                   Vitaminas
                 </Link>
               </li>

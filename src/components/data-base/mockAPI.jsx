@@ -5,7 +5,7 @@ const data = [
     price: 1100,
     stock: 5,
     img: "/img/1.jpg",
-    category: "exfoliante",
+    category: "exfoliantes",
     detail:
       "Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.",
   },
@@ -15,7 +15,7 @@ const data = [
     price: 900,
     stock: 5,
     img: "/img/2.jpg",
-    category: "exfoliante",
+    category: "exfoliantes",
     detail:
       "Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.",
   },
@@ -25,7 +25,7 @@ const data = [
     price: 900,
     stock: 5,
     img: "/img/3.jpg",
-    category: "vitamina",
+    category: "vitaminas",
     detail:
       "Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.",
   },
@@ -35,7 +35,7 @@ const data = [
     price: 1250,
     stock: 5,
     img: "/img/4.jpg",
-    category: "hidratante",
+    category: "hidratantes",
     detail:
       "Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.",
   },
@@ -45,7 +45,7 @@ const data = [
     price: 1800,
     stock: 5,
     img: "/img/5.jpg",
-    category: "hidratante",
+    category: "hidratantes",
     detail:
       "Cras quis est fermentum, rutrum magna eget, sodales massa. Morbi ut dolor mi. Donec dignissim orci id nibh pulvinar, a dignissim erat condimentum. Integer posuere est sed quam fringilla rutrum.",
   },

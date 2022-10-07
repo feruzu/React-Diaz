@@ -28,7 +28,7 @@ function ItemDetail({ item }) {
           <ItemCount initial={1} stock={15} onAdd={onAdd} />
         ) : (
           <Link className="finalizarCompra" to="/cart">
-            Finalizar compra
+            Ir al Carrito
           </Link>
         )}
       </div>

@@ -35,6 +35,14 @@ export default function CartContextProvider({ children }) {
     return setCart([]);
   }
 
+
+  // Calcular la suma de los precios
+  function total(){
+    let total = 0;
+    cart.forEach((item) => (total += item.price * item.count));
+    return total;
+  }
+
   return (
     <cartContext.Provider
       value={{
@@ -44,6 +52,7 @@ export default function CartContextProvider({ children }) {
         IsInCart,
         removeItem,
         clear,
+        total
       }}
     >
       {children}
