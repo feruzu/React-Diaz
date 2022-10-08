@@ -7,9 +7,22 @@ export default function CartContextProvider({ children }) {
 
   // Añadir al carrito
   function addItem(item, count) {
-    let newCart = cart.map((item) => item);
-    newCart.push({ ...item, count: count });
-    setCart(newCart);
+    if (IsInCart(item.id)){
+
+      let newCar = cart.map((itemMap) => {
+        if(itemMap.id === item.id) {
+          itemMap.count += count
+          return itemMap;
+        }else{
+          return itemMap
+        }
+      })
+      setCart(newCar);
+    }else{
+      let newCart = cart.map((item) => item);
+      newCart.push({ ...item, count: count });
+      setCart(newCart);
+    }
   }
 
   // Calcula total de items en el carrito
