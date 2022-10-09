@@ -8,7 +8,6 @@ import CartContextProvider from "./context/cartContext";
 
 
 function App() {
-
   return (
     <CartContextProvider>
     <BrowserRouter>

@@ -51,33 +51,6 @@ const data = [
   },
 ];
 
-export function getData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(data);
-    }, 2000);
-  });
-}
 
-export function getOneData(idItem) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let itemFind = data.find((item) => item.id === Number(idItem));
-
-      if (itemFind) resolve(itemFind);
-      else reject(new Error(`Item no encontrado`));
-    }, 2000);
-  });
-}
-
-export function getItemsByCategory(categoria){
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let itemFind = data.filter((item) => item.category === (categoria));
-      if (itemFind) resolve(itemFind);
-      else reject(new Error(`Item no encontrado`));
-    }, 2000);
-  });
-}
 
 export default data;

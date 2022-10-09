@@ -1,4 +1,4 @@
-import { getOneData } from "../data-base/mockAPI";
+import { getOneData } from "../data-base/firestore";
 import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
