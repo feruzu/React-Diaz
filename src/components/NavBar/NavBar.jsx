@@ -43,7 +43,7 @@ function NavBar() {
             >
               Productos
             </Link>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu" style={{ margin: 0 }}>
               <li>
                 <Link to="/categoria/exfoliantes" className="dropdown-item">
                   Exfoliantes

@@ -6,12 +6,14 @@
 }
 
 .item-detail-contenedor {
-   margin-top: 5rem;
-   margin-bottom: 5rem;
    gap: 5rem;
    display:flex;
    justify-content: center;
    align-items: center;
+   max-width: 90%;
+   margin: auto;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
 }
 
 .item-detail-contenedor img{

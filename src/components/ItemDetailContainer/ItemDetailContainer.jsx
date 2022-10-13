@@ -2,8 +2,7 @@ import { getOneData } from "../data-base/firestore";
 import { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
-import { DotPulse } from '@uiball/loaders'
-
+import { DotPulse } from '@uiball/loaders';
 
 function ItemDetailContainer() {
   let [data, setData] = useState({});
@@ -42,7 +41,9 @@ function ItemDetailContainer() {
     );
   }
 
-  return <div className="container">{<ItemDetail item={data} />}</div>;
+  return <div>{<ItemDetail item={data} /> }
+        
+          </div>;
 }
 
 export default ItemDetailContainer;

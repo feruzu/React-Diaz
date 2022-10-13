@@ -2,6 +2,7 @@
   text-align: center;
   width: min(90%, 140rem);
   margin: 0 auto;
+  height: 100%;
 }
 
 
@@ -9,7 +10,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   background-color: #ecebe4;
-  
 }
 
 *,
@@ -23,7 +23,10 @@ body {
   font-size: 1.6rem;
   line-height: 2;
   background-color: #ecebe4;
+  min-height: 100%;
+  flex-direction: column;
 }
+
 #root {
   background-color: #ecebe4;
 }
@@ -39,16 +42,16 @@ body {
 }
 
 .loading {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    max-width: 50%;
-    text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25% 0% 25% 0%;
 }
 
 .loading-inicio {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
+  padding: 25% 0% 25% 0%;
 }
+

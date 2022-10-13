@@ -5,6 +5,10 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart/Cart";
 import CartContextProvider from "./context/cartContext";
+import Footer from "./components/Footer/Footer";
+
+
+
 
 
 function App() {
@@ -23,6 +27,8 @@ function App() {
 
           <Route path="*" element={<h1>404: Te perdiste</h1>} />
         </Routes>
+  
+      <Footer/>
       </div>
     </BrowserRouter>
     </CartContextProvider>

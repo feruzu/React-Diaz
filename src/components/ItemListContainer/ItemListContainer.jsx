@@ -35,7 +35,7 @@ function ItemListContainer(props) {
 
   return (
     <>
-      <Carrusel/>
+   <Carrusel/>
       {isLoading ? (
         <div className="loading-inicio">
           <DotPulse size={55} speed={1.3} color="black" />

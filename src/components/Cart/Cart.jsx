@@ -13,11 +13,10 @@ function Cart(){
 
 
 if (cart.length === 0) {
-  return <div>
+  return <div className="carrito-vacio">
        <h1 className="carrito">Carrito</h1>
        <h2 className="vacio">Vacío</h2>
        <Link to="/"><button className="volver-tienda">Volver a la Tienda</button></Link>
-       
          </div>;
 }
 return (

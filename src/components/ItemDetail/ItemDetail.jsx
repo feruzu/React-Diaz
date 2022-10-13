@@ -17,6 +17,8 @@ function ItemDetail({ item }) {
   }
 
   return (
+
+
     <div className="item-detail-contenedor">
       <img src={img} alt="item-detail img"></img>
       <div className="item-detail-producto">
@@ -30,9 +32,14 @@ function ItemDetail({ item }) {
           <Link className="finalizarCompra" to="/cart">
             Ir al Carrito
           </Link>
+          
         )}
+        
       </div>
+          
     </div>
+   
+    
   );
 }
 
