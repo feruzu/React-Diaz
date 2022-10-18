@@ -1,0 +1,26 @@
+.checkout {
+    font-family: 'Cinzel', serif;
+}
+
+.checkout h2 {
+    font-size: 3rem;
+    margin-top: 30rem;
+    color: rgb(36, 138, 49);
+}
+
+.checkout p {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+
+.checkout .volver-tienda {
+    margin: 0;
+    margin-bottom: 25rem;
+    margin-top: 1rem;
+}
+
+.checkout span {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 30, 0);
+    color: white;
+}

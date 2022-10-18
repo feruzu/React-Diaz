@@ -43,7 +43,7 @@ export default function CartContextProvider({ children }) {
     return setCart(cart.filter((item) => item.id !== id));
   }
 
-  // Borrar todos los productos del carrito | Se lo puedo asignar aun botón
+  // Borrar todos los productos del carrito | Se lo puedo asignar a un botón
   function clear() {
     return setCart([]);
   }

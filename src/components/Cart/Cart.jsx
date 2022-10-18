@@ -2,23 +2,31 @@ import { useContext } from "react";
 import { cartContext } from "../../context/cartContext";
 import { Link } from "react-router-dom";
 import "./Cart.css"
+import CheckoutForm from "../CheckoutForm/CheckoutForm";
+
+
 
 function Cart(){
 
     const context = useContext(cartContext);
     const { cart, removeItem, clear, total } = context;
 
-   
-    
 
 
 if (cart.length === 0) {
-  return <div className="carrito-vacio">
-       <h1 className="carrito">Carrito</h1>
-       <h2 className="vacio">Vacío</h2>
-       <Link to="/"><button className="volver-tienda">Volver a la Tienda</button></Link>
-         </div>;
+  return (
+    <div className="carrito-vacio">
+      <h1 className="carrito">Carrito</h1>
+      <h2 className="vacio">Vacío</h2>
+      <Link to="/">
+        <button className="volver-tienda">Volver a la Tienda</button>
+      </Link>
+    </div>
+  );
 }
+
+
+
 return (
   <div className="container-carrito">
     <h1 className="carrito">Carrito</h1>
@@ -31,16 +39,16 @@ return (
         <button className="boton-borrar" onClick={() => removeItem(item.id)}>X</button>
       </div>
 
-      
-      
     ))}
 
     <div className="container-total">
     <span className="precio-total">Total: $ {total()} </span>
     <button className="vaciar-carrito" onClick={() => clear()}>Vaciar carrito</button>
-    <button>Comprar</button>
+    </div> 
+    <CheckoutForm/>
     </div>
-  </div>
+
+
 
 );
 }
