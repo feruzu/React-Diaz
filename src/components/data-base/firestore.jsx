@@ -17,7 +17,7 @@ const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
 
 
-// Items | Prdimos Documentos
+// Items | Pedimos Documentos
 export async function getData(){
   const miColeccion = collection( firestore, "productos");
   let snapShot = await getDocs(miColeccion);

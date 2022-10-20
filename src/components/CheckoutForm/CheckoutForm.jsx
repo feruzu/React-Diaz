@@ -16,7 +16,8 @@ function CheckoutForm() {
     email: "",
   });
 
-  function handleCheckout() {
+  function handleCheckout(event) {
+    event.preventDefault();
     const orderData = {
       buyer: dataForm,
       items: cart,
@@ -40,51 +41,52 @@ function CheckoutForm() {
   }
 
   return (
-    <form className="form-contenedor">
-      <h3>Complete los datos para finalizar su compra</h3>
-      <div className="mb-3">
-        <label className="form-label">Nombre</label>
+    <form onSubmit={handleCheckout}>
+      <h3>Completa los datos para finalizar con la compra</h3>
+      <div className="form-floating mb-3">
         <input
+          name="name"
           value={dataForm.name}
           onChange={inputChangeHandler}
-          name="name"
           type="text"
           className="form-control"
-          placeholder="nombre"
+          id="floatingTextInput"
+          required
         />
+        <label htmlFor="floatingTextInput">Nombre</label>
       </div>
-      <div className="mb-3">
-        <label className="form-label">Email </label>
+      <div className="form-floating mb-3">
         <input
-          value={dataForm.email}
           name="email"
+          value={dataForm.email}
           onChange={inputChangeHandler}
           type="email"
           className="form-control"
-          placeholder="name@example.com"
+          id="floatingEmailInput"
+          required
         />
+        <label htmlFor="floatingEmailInput">Correo</label>
       </div>
-      <div className="mb-3">
-        <label className="form-label">Teléfono</label>
+      <div className="form-floating mb-3">
         <input
-          value={dataForm.phone}
           name="phone"
+          value={dataForm.phone}
           onChange={inputChangeHandler}
           type="number"
           className="form-control"
-          placeholder="teléfono"
+          id="floatinNumberlInput"
+          required
         />
+        <label htmlFor="floatingEmailInput">Teléfono</label>
       </div>
-      <button
-        disabled={
-          dataForm.name === "" || dataForm.email === "" || dataForm.phone === ""
-        }
-        onClick={handleCheckout}
-      >
-        Comprar
-      </button>
+      <div className="text-center">
+        <button type="submit" className="btn btn-primary">
+          Comprar
+        </button>
+      </div>
     </form>
   );
 }
 
 export default CheckoutForm;
+

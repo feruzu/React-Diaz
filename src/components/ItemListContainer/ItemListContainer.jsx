@@ -6,7 +6,7 @@ import Carrusel from "../Carousel/Carousel";
 import { DotPulse } from '@uiball/loaders'
 
 
-function ItemListContainer(props) {
+function ItemListContainer() {
   const [data, setData] = useState([]);
 
   const { categoria } = useParams();

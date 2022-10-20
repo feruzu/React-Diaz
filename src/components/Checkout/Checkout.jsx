@@ -1,7 +1,6 @@
 import "./Checkout.css";
 import "../Cart/Cart";
-import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function Checkout() {
   const params = useParams();
