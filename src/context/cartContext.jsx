@@ -25,7 +25,7 @@ export default function CartContextProvider({ children }) {
     }
   }
 
-  // Calcula total de items en el carrito
+  // Total de productos en el carrito
   function getTotalItemsInCart() {
     let total = 0;
     cart.forEach((item) => (total += item.count));
@@ -38,7 +38,7 @@ export default function CartContextProvider({ children }) {
     return found;
   }
 
-  // Borrar un producto del carrito | X
+  // Borra producto de carrito
   function removeItem(id) {
     return setCart(cart.filter((item) => item.id !== id));
   }
@@ -47,7 +47,6 @@ export default function CartContextProvider({ children }) {
   function clear() {
     return setCart([]);
   }
-
 
   // Calcular la suma de los precios
   function total(){

@@ -9,7 +9,9 @@ function CartWidget() {
   return (
     <Link to={urlCart}>
       <i className="bi bi-bag"></i>
-      <span className="cantidad">{getTotalItemsInCart() > 0 && getTotalItemsInCart()}</span>
+      <span className="cantidad">
+        {getTotalItemsInCart() > 0 && getTotalItemsInCart()}
+      </span>
     </Link>
   );
 }

@@ -1,7 +1,6 @@
 import "./Item.css";
 import { Link } from "react-router-dom";
 
-
 function Item(item) {
   let { price, title, img, id } = item;
   const urlDetalle = `/producto/${id}`;
@@ -15,7 +14,9 @@ function Item(item) {
         <h3>{title}</h3>
         <h4>$ {price}</h4>
       </div>
-      <Link className="link" to={urlDetalle}>Ver más</Link>
+      <Link className="link" to={urlDetalle}>
+        Ver más
+      </Link>
     </div>
   );
 }
