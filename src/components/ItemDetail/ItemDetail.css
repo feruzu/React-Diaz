@@ -30,7 +30,7 @@
    margin: 2rem 0;
 }
 
-.finalizarCompra{
+.finalizar-compra{
    background-color: #1c1c1c;
     color: white;
     margin: 0;
@@ -40,12 +40,12 @@
     text-decoration: none;
 }
 
-.finalizarCompra:hover {
+.finalizar-compra:hover {
    color: white;
    opacity: 70%;
 }
 
-.finalizarCompra:active {
+.finalizar-compra:active {
    opacity: 100%;
 }
 
