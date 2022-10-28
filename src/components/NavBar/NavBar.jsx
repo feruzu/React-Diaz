@@ -29,7 +29,7 @@ function NavBar() {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="/" className="nav-link active" aria-current="page">
+            <Link to="/" className="nav-link" aria-current="page">
               Inicio
             </Link>
           </li>
