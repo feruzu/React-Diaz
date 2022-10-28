@@ -30,7 +30,8 @@
    margin: 2rem 0;
 }
 
-.finalizar-compra{
+.finalizar-compra,
+.seguir-comprando{
    background-color: #1c1c1c;
     color: white;
     margin: 0;
@@ -38,6 +39,11 @@
     padding: 1.5rem 1.8rem;
     font-size: 1.4rem;
     text-decoration: none;
+}
+
+.seguir-comprando {
+   padding: 1.4rem;
+   margin-left: 2rem;
 }
 
 .finalizar-compra:hover {
@@ -61,4 +67,5 @@
    .item-detail-contenedor img{
       max-width: 100%;
    }
+ 
 }

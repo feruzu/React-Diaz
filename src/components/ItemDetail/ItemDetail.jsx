@@ -27,9 +27,14 @@ function ItemDetail({ item }) {
         {cartVacio ? (
           <ItemCount initial={1} stock={15} onAdd={onAdd} />
         ) : (
-          <Link className="finalizar-compra" to="/cart">
-            Ir al Carrito
-          </Link>
+          <div>
+            <Link className="finalizar-compra" to="/cart">
+              Ir al Carrito
+            </Link>
+            <button className="seguir-comprando" onClick={setCartVacio}>
+              Seguir comprando
+            </button>
+          </div>
         )}
       </div>
     </div>
