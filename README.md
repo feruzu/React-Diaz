@@ -1,16 +1,25 @@
 
 # Serum´s
 
-Este proyecto se trata de una web e-commerce
+## **Serum´s** es una web de **e-commerce desarrollada** con [React Js](https://es.reactjs.org/) donde puedes comprar serums.
 
-* La app se inicio con Create React App
-* Para ejecutar su app tiene que ingresar en la terminal npm start
 
+
+* La app se inició con Create React App
+
+```
+$ npx create-react-app my-app
+```
+* Para ejecutar la app tiene que ingresar en la terminal 
+```
+$ npm start
+```
 
 Bibliotecas instaladas :
 
 * Bootstrap-icons
 * Bootstrap
+* UI Ball
 
 ## Tecnologías utilizadas :
 <div style="display: inline_block"><br>
