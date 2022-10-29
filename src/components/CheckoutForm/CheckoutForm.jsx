@@ -32,8 +32,8 @@ function CheckoutForm() {
   }
 
   function inputChangeHandler(event) {
-    let inputName = event.target.name;
-    let value = event.target.value;
+    const inputName = event.target.name;
+    const value = event.target.value;
 
     const newDataForm = { ...dataForm };
     newDataForm[inputName] = value;
