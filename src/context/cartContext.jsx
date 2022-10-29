@@ -7,25 +7,23 @@ export default function CartContextProvider({ children }) {
 
   // Añadir al carrito
   function addItem(item, count) {
-    if (IsInCart(item.id)){
-
+    if (IsInCart(item.id)) {
       let newCar = cart.map((itemMap) => {
-        if(itemMap.id === item.id) {
-          itemMap.count += count
+        if (itemMap.id === item.id) {
+          itemMap.count += count;
           return itemMap;
-        }else{
-          return itemMap
+        } else {
+          return itemMap;
         }
-      })
+      });
       setCart(newCar);
-    }else{
+    } else {
       let newCart = cart.map((item) => item);
       newCart.push({ ...item, count: count });
       setCart(newCart);
     }
   }
 
-  // Total de productos en el carrito
   function getTotalItemsInCart() {
     let total = 0;
     cart.forEach((item) => (total += item.count));
@@ -38,18 +36,17 @@ export default function CartContextProvider({ children }) {
     return found;
   }
 
-  // Borra producto de carrito
   function removeItem(id) {
     return setCart(cart.filter((item) => item.id !== id));
   }
 
-  // Borrar todos los productos del carrito | Se lo puedo asignar a un botón
+  // Borrar todos los productos del carrito
   function clear() {
     return setCart([]);
   }
 
-  // Calcular la suma de los precios
-  function total(){
+  // Suma de precios
+  function total() {
     let total = 0;
     cart.forEach((item) => (total += item.price * item.count));
     return total;
@@ -64,7 +61,7 @@ export default function CartContextProvider({ children }) {
         IsInCart,
         removeItem,
         clear,
-        total
+        total,
       }}
     >
       {children}
