@@ -3,7 +3,7 @@
 
 ## **Serum´s** es una web de **e-commerce desarrollada** con [React Js](https://es.reactjs.org/) donde puedes comprar serums.
 
-
+#
 
 * La app se inició con Create React App
 
@@ -21,6 +21,12 @@ Bibliotecas instaladas :
 * Bootstrap
 * UI Ball
 
+#
+
+ `Diseño responsive`
+
+[![Dise-o.png](https://i.postimg.cc/TwjpbthW/Dise-o.png)](https://postimg.cc/xJCfDyv0)
+
 ## Tecnologías utilizadas :
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
@@ -28,3 +34,6 @@ Bibliotecas instaladas :
   <img align="center" alt="Rafa-Js" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">   
     <img align="center" alt="Rafa-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
 </div>
+
+
+
