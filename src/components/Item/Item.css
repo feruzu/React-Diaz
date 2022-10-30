@@ -54,12 +54,9 @@ h4 {
 }
 
 h3 {
-    margin: 2rem 0 2rem;
-    
+    margin: 2rem 0 2rem;    
 }
 
 .item:hover {
-
     box-shadow: rgba(151, 147, 128, 0.4) 5px 5px, rgba(171, 180, 136, 0.3) 10px 10px;
-
 }
