@@ -25,8 +25,8 @@ Bibliotecas instaladas :
 
  `Diseño responsive`
 
-[![Dise-o.png](https://i.postimg.cc/TwjpbthW/Dise-o.png)](https://postimg.cc/xJCfDyv0)
-
+ ![Diseño](https://github.com/feruzu/React-Diaz/blob/main/public/img/Dise%C3%B1o.png)
+ 
 ## Tecnologías utilizadas :
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
