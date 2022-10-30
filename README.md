@@ -3,7 +3,7 @@
 
 ## **Serum´s** es una web de **e-commerce desarrollada** con [React Js](https://es.reactjs.org/) donde puedes comprar serums.
 
-#
+
 
 * La app se inició con Create React App
 
