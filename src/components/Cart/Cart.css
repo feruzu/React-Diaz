@@ -51,9 +51,14 @@
 }
 
 .container-carrito .boton-borrar {
-    width: 5rem;
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    height: 3rem;
+    border-radius: 50%;
 }
+
 
 .carrito-productos {
     justify-content: space-between;
@@ -137,6 +142,10 @@
         width: 90%;
         margin-inline: 5%;
         margin-top: 10rem;
+    }
+
+    .container-carrito .boton-borrar {
+        border-radius: 0%;
     }
 
 
