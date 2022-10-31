@@ -3,7 +3,7 @@
 
 ## **Serum´s** es una web de **e-commerce desarrollada** con [React Js](https://es.reactjs.org/) donde puedes comprar serums.
 
-
+ ![Gif](https://github.com/feruzu/React-Diaz/blob/main/public/img/Serums.gif)
 
 * La app se inició con Create React App
 
@@ -20,6 +20,8 @@ Bibliotecas instaladas :
 * Bootstrap-icons
 * Bootstrap
 * UI Ball
+
+Use `Firestore` como base de datos para almacenar productos y ordenes.
 
 #
 
