@@ -1,10 +1,10 @@
 .checkout {
     font-family: 'Cinzel', serif;
+    margin: 35rem 0rem 35rem 0rem;
 }
 
 .checkout h2 {
     font-size: 3rem;
-    margin-top: 30rem;
     color: rgb(36, 138, 49);
 }
 
@@ -15,7 +15,6 @@
 
 .checkout .volver-tienda {
     margin: 0;
-    margin-bottom: 25rem;
     margin-top: 1rem;
 }
 
