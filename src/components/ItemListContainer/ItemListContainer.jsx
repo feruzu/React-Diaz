@@ -7,9 +7,7 @@ import { DotPulse } from "@uiball/loaders";
 
 function ItemListContainer() {
   const [data, setData] = useState([]);
-
   const { categoria } = useParams();
-
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
