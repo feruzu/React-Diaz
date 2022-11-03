@@ -39,11 +39,16 @@
     padding: 1.5rem 1.8rem;
     font-size: 1.4rem;
     text-decoration: none;
+    display: grid;
+    gap: 2rem;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .seguir-comprando {
    padding: 1.4rem;
-   margin-left: 2rem;
 }
 
 .finalizar-compra:hover {
@@ -67,5 +72,11 @@
    .item-detail-contenedor img{
       max-width: 100%;
    }
- 
+
+   .finalizar-compra,
+   .seguir-comprando {
+    width: 100%;
+    margin-top: 2rem;
+
+ }
 }
