@@ -5,6 +5,8 @@ import "./Cart.css";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 
 function Cart() {
+  window.scrollTo(0,0); 
+
   const context = useContext(cartContext);
   const { cart, removeItem, clear, total } = context;
 
