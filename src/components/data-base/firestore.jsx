@@ -13,12 +13,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAjcnqGRDhGKDJh5WwuECCsSf74znzYMts",
-  authDomain: "react-serums.firebaseapp.com",
-  projectId: "react-serums",
-  storageBucket: "react-serums.appspot.com",
-  messagingSenderId: "83967177205",
-  appId: "1:83967177205:web:8fcc5216378b05a80930bc",
+  apiKey: process.env.REACT_APP_FIREBASE_apykey,
+  authDomain: process.env.REACT_APP_FIREBASE_authDomain,
+  projectId: process.env.REACT_APP_FIREBASE_projectId,
+  storageBucket: process.env.REACT_APP_FIREBASE_storageBucket,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_messagingSenderId,
+  appId: process.env.REACT_APP_FIREBASE_appId,
 };
 
 // Initialize Firebase
