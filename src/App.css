@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  width: min(90%, 140rem);
+  margin: 0 auto;
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #ecebe4;
+}
+
+*,
+*:before,
+:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: #ecebe4;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+#root {
+  background-color: #ecebe4;
+}
+
+.titulo {
+  font-size: 3rem;
+  margin-top: 6rem;
+  font-family: 'Cinzel', serif;
+  text-align: left;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.425);
+  width: 28rem;
+  letter-spacing: 1.2rem;
+}
+
+.loading {
+  background-color: #ecebe4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-inicio {
+  display: flex;
+  justify-content: center;
+  padding: 25% 0% 25% 0%;
+}
+
+
+@media (max-width: 720px) {
+  .loading-inicio {
+    padding: 60% 0% 40% 0%;
+  }
+}
